@@ -27,8 +27,8 @@ The following project contains a simulation of an airtight, isolated room filled
 [4] https://www.osha.gov/laws-regs/standardinterpretations/2007-04-02-0 - OSHA requires 19.5% oxygen minimum (195,000 ppm) and 23.5% max (235,000)
 [5] https://www.osha.gov/chemicaldata/183 - OSHA requires a maximum of 5000 ppm of CO2 for an 8 hour shift
 
-
 ## Folder structure and purposes
+```
 backend/
 │
 ├── main.py
@@ -64,7 +64,7 @@ backend/
 │       - Contains functions for actually running the simulation.
 │   └── dummy_data/
 │       - Contains generated JSON files for the current simulation, which are deleted before ending the main script.
-
+```
 
 ## To Do
 - Make tests for Pytest to check edge cases.
