@@ -1,0 +1,25 @@
+#Set database type as either "dataframe" or "sql".
+#Dataframe - Sim runs without any control.
+#SQL - Sim runs with PID control, affecting the room conditions.
+database_type: sql
+
+simulation: 
+  hours_run: 6 #time span for the data
+  init_temp_C: 25.0 #degC
+  init_room_CO2: 500 #ppm
+  init_room_O2: 210000 #0.21*10**6 ppm
+  room_volume: 50 #m3
+  occupants: 30 #people in room
+
+#For changing Kp, Ki and Kd for variable.
+pid_constants:
+  temp_k: [1,1,1]
+  co2_k: [1,1,1]
+  o2_k: [1,1,1]
+
+# Path is relative to backend/directory
+data_path: simulation/dummy_data
+
+# Path is relative to backend/directory 
+database_name: services/simulation.db
+
