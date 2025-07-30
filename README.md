@@ -3,11 +3,22 @@
 This project simulates a controlled room environment, generating time-series data that is exposed via JSON APIs for seamless integration with an external system (`backend/services`). The data is stored in either dataframe or SQL form (determined using the `config.yaml` file) the data is plotted. Finally, the project is cleaned of any generated files. A final cleanup routine ensures the project remains organized by removing all generated artifacts.
 
 
-## How to run
-1. In `config.yaml` change the database_type to either "dataframe" to produce the uncontrolled simulation, or "sql" for the HVAC-controlled simulation.
-2. Make a virtual environment and install dependencies by running:
+## How to run (Windows)
+1. Download the entire project and extract it where you want to run it.
+2. In `config.yaml` change the database_type to either "dataframe" to produce the uncontrolled simulation, or "sql" for the HVAC-controlled simulation. It is set to sql by default.
+3. Open a terminal and ensure that the current working directory is the extracted project folder. For example, open the folder in an IDE like Visual Studio Code, or run `cd path\to\folder`.
+4. Make a virtual environment and install dependencies by running:
 `python -m venv venv && venv\scripts\activate && pip install -r requirements.txt`
-4. Run the `main.py` file using `python -m backend.main` from the root folder.
+5. Run the `main.py` file using `python -m backend.main` from the root folder.
+
+
+## How to run (Mac / Linux)
+1. Download the entire project and extract it where you want to run it.
+2. In `config.yaml` change the database_type to either "dataframe" to produce the uncontrolled simulation, or "sql" for the HVAC-controlled simulation. It is set to sql by default.
+3. Open a terminal and ensure that the current working directory is the extracted project folder. For example, open the folder in an IDE like Visual Studio Code, or run `cd path/to/folder`.
+4. Make a virtual environment and install dependencies by running:
+`python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt`
+5. Run the `main.py` file using `python3 -m backend.main` from the root folder.
 
 
 ## Simulation
