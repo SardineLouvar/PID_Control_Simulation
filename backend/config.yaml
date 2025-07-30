@@ -17,9 +17,9 @@ pid_constants:
   co2_k: [1,1,1]
   o2_k: [1,1,1]
 
-# Path is relative to backend/directory
+# Path is relative to backend/
 data_path: simulation/dummy_data
 
-# Path is relative to backend/directory 
+# Path is relative to backend/
 database_name: services/simulation.db
 

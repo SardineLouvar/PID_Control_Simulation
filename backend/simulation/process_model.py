@@ -1,9 +1,9 @@
 import os
 import matplotlib.pyplot as plt
-from simulation.model import simulate_airsealed_room_no_control, simulate_airsealed_room_with_control, hours_run, start_time, init_temp_C, init_room_CO2, init_room_O2
-from simulation.generate_json import write_json
-from services.config_loader import load_config
-from simulation.HVAC import PID, use_hvac
+from backend.simulation.model import simulate_airsealed_room_no_control, simulate_airsealed_room_with_control, hours_run, start_time, init_temp_C, init_room_CO2, init_room_O2
+from backend.simulation.generate_json import write_json
+from backend.services.config_loader import load_config
+from backend.simulation.HVAC import PID, use_hvac
 
 config = load_config()
 db_type = config["database_type"]

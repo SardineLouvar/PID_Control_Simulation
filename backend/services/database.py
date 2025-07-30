@@ -1,6 +1,6 @@
 import sqlite3
 import os
-from services.config_loader import load_config
+from backend.services.config_loader import load_config
 import matplotlib.pyplot as plt
 from datetime import datetime
 

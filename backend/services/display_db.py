@@ -1,10 +1,10 @@
 from flask import Flask, render_template_string
 import sqlite3
-from services.config_loader import load_config
 import os
 import matplotlib.pyplot as plt
 from datetime import datetime
-from services.database import conn, cur
+from backend.services.config_loader import load_config
+from backend.services.database import conn, cur
 
 config = load_config()
 

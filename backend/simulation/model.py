@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import os
 from datetime import datetime, timedelta
 import random
-from services.config_loader import load_config
+from backend.services.config_loader import load_config
 
 """
 A simulation of an airtight sterile room, where a HVAC system must manage the environment conditions.

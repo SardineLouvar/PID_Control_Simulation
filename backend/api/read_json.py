@@ -2,7 +2,7 @@ import json
 import os
 import pandas as pd
 import re
-from services.config_loader import load_config
+from backend.services.config_loader import load_config
 
 config = load_config()
 

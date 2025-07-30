@@ -1,11 +1,11 @@
 import runpy
 import os
 import shutil
-from simulation.process_model import process_for_dataframe, process_for_sql
-from services.data_processor import initialise_db, initialise_dataframe
-from services.database import delete_db
-from services.display_db import start_server, plot_data_from_db
-from services.config_loader import load_config
+from backend.simulation.process_model import process_for_dataframe, process_for_sql
+from backend.services.data_processor import initialise_db, initialise_dataframe
+from backend.services.database import delete_db
+from backend.services.display_db import start_server, plot_data_from_db
+from backend.services.config_loader import load_config
 
 config = load_config()
 

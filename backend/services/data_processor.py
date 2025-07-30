@@ -1,6 +1,6 @@
 import pandas as pd
-from api.read_json import get_sorted_json_filepaths, extract_row_from_json, file_heading, time_heading, temp_heading, co2_heading, o2_heading, thermal_heading
-from services.database import generate_table, insert_data
+from backend.api.read_json import get_sorted_json_filepaths, extract_row_from_json, file_heading, time_heading, temp_heading, co2_heading, o2_heading, thermal_heading
+from backend.services.database import generate_table, insert_data
 
 def initialise_dataframe():
     """

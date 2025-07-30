@@ -7,8 +7,7 @@ This project simulates a controlled room environment, generating time-series dat
 1. In `config.yaml` change the database_type to either "dataframe" to produce the uncontrolled simulation, or "sql" for the HVAC-controlled simulation.
 2. Make a virtual environment and install dependencies by running:
 `python -m venv venv && venv\scripts\activate && pip install -r requirements.txt`
-3. Move to the `backend` folder in bash. For example: `cd backend`.
-4. Run the `main.py` file using `python main.py`.
+4. Run the `main.py` file using `python -m backend.main` from the root folder.
 
 
 ## Simulation
@@ -26,6 +25,7 @@ The following project contains a simulation of an airtight, isolated room filled
 [3] https://pmc.ncbi.nlm.nih.gov/articles/PMC8672270/ - Breathe 6L air per min (resting), use approx 5% oxygen
 [4] https://www.osha.gov/laws-regs/standardinterpretations/2007-04-02-0 - OSHA requires 19.5% oxygen minimum (195,000 ppm) and 23.5% max (235,000)
 [5] https://www.osha.gov/chemicaldata/183 - OSHA requires a maximum of 5000 ppm of CO2 for an 8 hour shift
+
 
 ## Folder structure and purposes
 ```
