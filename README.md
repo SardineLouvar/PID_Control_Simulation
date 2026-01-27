@@ -77,8 +77,8 @@ backend/
 │       - Contains generated JSON files for the current simulation, which are deleted before ending the main script.
 ```
 
-## To Do
-- Make tests for Pytest to check edge cases.
+## Running Unit Tests
+To run every unit test for the code, use the command `pytest`. Ensure that you have created the environment and downloaded the required dependencies before doing this.
 
 ## Notes
 - Cursor was used to generate the file structure diagram, but the descriptions were added myself.
