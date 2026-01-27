@@ -25,7 +25,7 @@ This project simulates a controlled room environment, generating time-series dat
 The following project contains a simulation of an airtight, isolated room filled with industrial equipment and workers. The workers produce carbon dioxide and consume oxygen, and the industrial equipment raise or lower the overall temperature of the room. The model is simplified and somewhat unrealistic, however I wanted a mixture of changes to the environment of the room to test the control with. A HVAC system is used to control the temperature, CO2 concentration and O2 concentration of the room using a proportional-integral-derivative (PID) control scheme.
 
 ### Model assumptions
-- All thermal energy goes into the air (no absorbtion by walls, equipment, people etc.)
+- All thermal energy goes into the air (no absorption by walls, equipment, people etc.)
 - Completely uniform temperature and composition of air in the room.
 - The composition of air in the room does not affect the volume of oxygen consumed / co2 expelled
 - No temperature or concentration gradient effect that make it more difficult to increase / decrease the temp and concs at extreme conditions.
@@ -81,4 +81,5 @@ backend/
 To run every unit test for the code, use the command `pytest`. Ensure that you have created the environment and downloaded the required dependencies before doing this.
 
 ## Notes
+
 - Cursor was used to generate the file structure diagram, but the descriptions were added myself.
