@@ -1,9 +1,8 @@
-import pytest
 import matplotlib
 matplotlib.use('Agg')  # Use non-GUI backend
-import matplotlib.pyplot as plt
+
 from datetime import datetime, timedelta
-from unittest.mock import patch, MagicMock, call
+from unittest.mock import patch, MagicMock
 
 from backend.simulation.process_model import plot_data, process_for_dataframe, process_for_sql
 

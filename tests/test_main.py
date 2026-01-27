@@ -1,8 +1,6 @@
-import pytest
 import os
-import shutil
-from unittest.mock import patch, MagicMock, call
-from pathlib import Path
+from unittest.mock import patch
+
 
 from backend.main import delete_pycache_dirs, delete_data
 

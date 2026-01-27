@@ -1,7 +1,3 @@
-import pytest
-import math
-from unittest.mock import patch, MagicMock
-
 from backend.simulation.HVAC import PID, use_hvac
 
 

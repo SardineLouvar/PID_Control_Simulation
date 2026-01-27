@@ -2,11 +2,10 @@ import pytest
 import sqlite3
 import tempfile
 import os
-from unittest.mock import patch, MagicMock, call
+from unittest.mock import patch, MagicMock
 from datetime import datetime
 import matplotlib
 matplotlib.use('Agg')  # Use non-GUI backend
-import matplotlib.pyplot as plt
 import math
 
 from backend.services.display_db import plot_data_from_db, index, start_server

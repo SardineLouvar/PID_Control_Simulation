@@ -1,7 +1,4 @@
-import pytest
-import random
 from datetime import datetime, timedelta
-from unittest.mock import patch, MagicMock
 
 from backend.simulation.model import (
     simulate_process_equipment,

@@ -1,8 +1,5 @@
-import pytest
 import json
-from unittest.mock import patch, MagicMock, mock_open
-import sys
-import os
+from unittest.mock import patch, mock_open
 
 from backend.simulation.generate_json import write_json
 
