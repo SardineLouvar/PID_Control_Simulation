@@ -1,6 +1,6 @@
 # Simulation of an Airtight room with a HVAC system
 
-This project simulates a controlled room environment, generating time-series data that is exposed via JSON APIs for seamless integration with an external system (`backend/services`). The data is stored in either dataframe or SQL form (determined using the `config.yaml` file) the data is plotted. Finally, the project is cleaned of any generated files. A final cleanup routine ensures the project remains organized by removing all generated artifacts.
+This project simulates a controlled room environment, generating time-series data that is exposed via JSON APIs for seamless integration with an external system (`backend/services`). The data is stored in either dataframe or SQL form (determined using the `config.yaml` file) the data is plotted. Finally, a cleanup routine ensures the project stays organized by removing all generated files.
 
 
 ## How to run (Windows)
@@ -83,3 +83,4 @@ To run every unit test for the code, use the command `pytest`. Ensure that you h
 ## Notes
 
 - Cursor was used to generate the file structure diagram, but the descriptions were added myself.
+
