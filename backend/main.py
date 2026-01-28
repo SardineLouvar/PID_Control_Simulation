@@ -1,4 +1,3 @@
-import runpy
 import os
 import shutil
 from backend.simulation.process_model import process_for_dataframe, process_for_sql
@@ -6,6 +5,7 @@ from backend.services.data_processor import initialise_db, initialise_dataframe
 from backend.services.database import delete_db
 from backend.services.display_db import start_server, plot_data_from_db
 from backend.services.config_loader import load_config
+import sys
 
 config = load_config()
 
@@ -40,6 +40,9 @@ if __name__ == "__main__":
     Tasks: - Run the simulation to either produce data for a dataframe or SQL table.
            - Clean the project.
     """
+
+    if sys.version_info < (3, 10):
+        raise RuntimeError("Python 3.10 or newer is required")
 
     os.system('cls')
 
