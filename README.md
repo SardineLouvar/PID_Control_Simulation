@@ -2,6 +2,7 @@
 
 This project simulates a controlled room environment, generating time-series data that is exposed via JSON APIs for seamless integration with an external system (`backend/services`). The data is stored in either dataframe or SQL form (determined using the `config.yaml` file) the data is plotted. Finally, a cleanup routine ensures the project stays organized by removing all generated files.
 
+Python version: 3.10 or newer (tested with 3.13.5)
 
 ## How to run (Windows)
 1. Download the entire project and extract it where you want to run it.
@@ -83,4 +84,5 @@ To run every unit test for the code, use the command `pytest`. Ensure that you h
 ## Notes
 
 - Cursor was used to generate the file structure diagram, but the descriptions were added myself.
+
 
